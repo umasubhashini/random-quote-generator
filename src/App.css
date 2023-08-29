@@ -1,0 +1,253 @@
+/* QuoteGenerator.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+
+/* ... Your existing styles ... */
+
+/* Main Heading */
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Main Heading */
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Main Heading Container */
+
+/* Emoji Styles */
+
+/* Main Heading */
+.title {
+  font-size: 28px;
+  margin: 20px 0;
+  /* Apply rainbow colors using linear gradient */
+  background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #0080ff, #8000ff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Apply animation for font size increase and text color change */
+  animation: rainbowFontAnimation 5s infinite alternate, fadeIn 1s ease-in-out;
+}
+
+/* Keyframe Animation for Rainbow Font */
+@keyframes rainbowFontAnimation {
+  0%, 100% {
+    font-size: 28px; /* Initial font size */
+    color: white; /* Initial text color */
+  }
+  50% {
+    font-size: 36px; /* Increased font size */
+    color: #333; /* Intermediate text color */
+  }
+}
+
+/* Keyframe Animation for Bounce Effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Bounce effect */
+  }
+}
+
+/* ... Your existing styles ... */
+
+
+/* ... Your existing styles ... */
+
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Quote Box with Flower Border */
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* 3D Quote Box Animation */
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Quote Box with Animated Designs */
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Quote Box with Animated Designs */
+.quote-box {
+  /* ... Your existing quote box styles ... */
+  position: relative; /* Required for positioning pseudo-elements */
+  overflow: hidden; /* Hide overflow to round the corners */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  
+  /* Add colorful border using gradient */
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #ff0000, #ff8000, #80ff00, #00ff80, #0080ff, #8000ff, #ff00ff) 1;
+  
+  /* Apply 3D transformation properties */
+  perspective: 1000px; /* Set the perspective for 3D space */
+  transform-style: preserve-3d; /* Allow children to maintain 3D position */
+  transition: transform 0.5s ease-in-out; /* Apply smooth transition to transform property */
+}
+
+/* ... Your existing styles ... */
+
+
+/* Animated Designs - Before Pseudo-element */
+.quote-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, #ff6b6b, #3a1c71);
+  opacity: 0.2;
+  z-index: -1;
+  animation: rotateAnimation 6s linear infinite;
+}
+
+/* Animated Designs - After Pseudo-element */
+.quote-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #ff6b6b, #3a1c71);
+  opacity: 0.2;
+  z-index: -1;
+  animation: rotateAnimation 6s linear infinite reverse;
+}
+
+/* Keyframe Animation for Rotation */
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.quote-box:hover {
+  /* Apply 3D rotation on hover for the 3D animation effect */
+  transform: rotateY(10deg) translateZ(20px);
+}
+
+
+/* Flower Border */
+.flower-border {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-image: url('flowerborder.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  z-index: -1; /* Place behind the quote box */
+  border-radius: 20px;
+}
+
+
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Rainbow Quote Text */
+@keyframes rainbowAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.quote-text {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  /* Apply multicolor background using linear gradient */
+  background: linear-gradient(to right, #0080ff, #8000ff, #ff00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* QuoteGenerator.css */
+
+/* ... Your existing styles ... */
+
+/* Rainbow Button */
+@keyframes rainbowAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Generate Button */
+.generate-button {
+  background-color: #dd00ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: #ad00b3;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+  
+  .quote-text {
+    font-size: 18px;
+  }
+  
+  .generate-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
